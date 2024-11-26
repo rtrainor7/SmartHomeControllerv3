@@ -33,5 +33,13 @@ namespace SmartHomeController
             this.TargetTemperature = thermostatTargetTemperature;
 
         }
+
+        public override GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine("This is a thermostat");
+            Console.WriteLine($"Current Tempature: {CurrentTemperature}");
+            Console.WriteLine($"Target Tempature: {TargetTemperature}");
+        }
     }
 }
